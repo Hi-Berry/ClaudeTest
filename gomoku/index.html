@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오목 (Gomoku)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>오목 (Gomoku)</h1>
+        <div class="game-info">
+            <div class="turn-indicator">
+                <span id="current-player">흑돌</span> 차례
+            </div>
+            <div class="score">
+                <span>흑돌: <span id="black-wins">0</span>승</span>
+                <span>백돌: <span id="white-wins">0</span>승</span>
+            </div>
+        </div>
+        <div id="board"></div>
+        <div class="controls">
+            <button id="restart-btn">다시 시작</button>
+            <button id="undo-btn">무르기</button>
+        </div>
+        <div id="message"></div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
